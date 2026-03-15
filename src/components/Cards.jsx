@@ -60,7 +60,7 @@ export default function Cards({ setMusicPlaying, handleShowMainContent }) {
                     <QuestionCard
                         key="main-question"
                         emoji="🥰"
-                        question="Can you be mine paglu forever?"
+                        question="?"
                         onAnswer={(answer) => {
                             if (answer) {
                                 setCardState("yesResponse")
@@ -75,37 +75,14 @@ export default function Cards({ setMusicPlaying, handleShowMainContent }) {
                     <QuestionCard
                         key="yes-response"
                         emoji="🩷"
-                        question="Yesss! You always make my heart smile! I’m so lucky to have you in my life."
+                        question="Yesss! You always make me smile! I’m so lucky to have you in my life."
                         showButtons={false}
                         btnText="More love ahead"
                         onAnswer={() => setCardState("secretCode")} // Add a new action here
                     />
                 )}
 
-                {cardState === "secretCode" && <SecretCodeCard onCorrect={handleShowMainContent} />}
-
-                {cardState === "areYouSure" && (
-                    <QuestionCard
-                        key="are-you-sure"
-                        emoji="🙃"
-                        question="Are you sure?"
-                        onAnswer={(answer) => {
-                            if (answer) setCardState("finalNoResponse");
-                            else goToMainQuestion();
-                        }}
-                    />
-                )}
-
-                {cardState === "finalNoResponse" && (
-                    <QuestionCard
-                        key="final-no-response"
-                        emoji="🥺"
-                        question="Oh no! You can't really say no to this! You're already mine. Go back and make the right choice!"
-                        showButtons={false}
-                        btnText="Go back"
-                        onAnswer={goToMainQuestion}
-                    />
-                )}
+                {cardState === "secretCode" && <SecretCodeCard onCorrect={handleShowMainContent} />}                
                 {showConfetti &&
                     <Confetti
                         width={windowSize.width}

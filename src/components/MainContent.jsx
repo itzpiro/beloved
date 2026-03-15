@@ -26,7 +26,7 @@ export default function MainContent() {
                     className="w-44 h-44 mb-8 rounded-full overflow-hidden shadow-md"
                 >
                     <Image
-                        src="https://images.pexels.com/photos/371285/pexels-photo-371285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://images.unsplash.com/photo-1767986552377-efeca5e44e58?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Heart icon"
                         priority={true}
                         width={176}
@@ -38,7 +38,7 @@ export default function MainContent() {
                     Our Special Story
                 </h1>
                 <div className="text-2xl md:text-3xl text-purple-700 mb-8 relative z-10">
-                    Hey Cutiepie, you are<br />my<FlipWords words={['sunshine', 'bakchodi partner', 'paglu', 'vc partner', 'world']} className="text-nowrap" />
+                    Hey Cutiepie, you are<br />my<FlipWords words={['Manchii', 'Sleep manager', 'paglu', 'vc partner','Jiddi', 'Tooti bachhi']} className="text-nowrap" />
                 </div>
                 <motion.button
                     whileHover={{ scale: 1.05 }}
@@ -56,12 +56,12 @@ export default function MainContent() {
             <h2 className="text-3xl font-bold text-blue-600 mb-6 relative z-10">Our Journey</h2>
             <div className="space-y-4 flex-1 overflow-y-auto overflow-x-hidden rounded-xl custom-scrollbar">
                 {[
-                    { date: '28 April, 2025', event: 'Our Journey Began', emoji: '❤️' },
-                    { date: '9 May, 2025', event: 'First Movie Together On Tele VC', emoji: '🎬' },
-                    { date: 'WAITING', event: 'First Hug', emoji: '🤗' },
+                    { date: 'AUGUST , 2025', event: 'Our Journey Began', emoji: '❤️' },
+                    { date: '15 Jan , 2026', event: 'First Movie Together On Tele VC', emoji: '🎬' },
+                    { date: 'WAITING', event: 'First VC ', emoji: '🤗' },
                     { date: 'WAITING', event: 'First Trip Together', emoji: '✈️' },
                     { date: 'HEHEHE', event: 'First Fight & Patch-up', emoji: '💬' },
-                    { date: 'JANE DEH', event: 'First Christmas Together', emoji: '🎄' },
+                    { date: 'IKYK', event: 'First Christmas Together', emoji: '🎄' },
                 ]
                     .map((item, index) => (
                         <motion.div
@@ -92,7 +92,7 @@ export default function MainContent() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <TimeCounter
-                            startDate="2019-10-23"
+                            startDate="2025-09-02"
                             label="As Friends"
                         />
                     </motion.div>
@@ -102,8 +102,8 @@ export default function MainContent() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
                         <TimeCounter
-                            startDate="2022-01-14"
-                            label="As a Couple"
+                            startDate="2025-11-03"
+                            label="As Friends too"
                         />
                     </motion.div>
                 </div>
@@ -142,7 +142,7 @@ export default function MainContent() {
                         >
                             {/* If you want to show your pics then you can save your pics in public/images folder like this 1.jpg, 2.jpg, 3.jpg then replace the src to this - /images/${i}.jpg */}
                             <Image
-                                src={`https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                                src={`/images/${i}.jpg`}
                                 alt={`Gallery image ${i}`}
                                 width={330}
                                 height={270}
@@ -163,8 +163,8 @@ export default function MainContent() {
                         <p>From the very first moment our paths crossed, life has felt more beautiful, more exciting, and more meaningful. Every smile, every conversation, and every memory we've shared has built a story so precious that no words can truly capture it. I feel incredibly grateful to have someone like you by my side, someone who understands me without even saying a word, someone who brings light even on the darkest days. Through ups and downs, laughter and tears, you've been a constant source of strength and happiness. As we continue to write our journey together, I want you to always remember that you are deeply cherished, endlessly appreciated, and truly loved. Here's to the countless memories we've yet to create and the beautiful future that awaits us. You are, and always will be, my favorite part of every day.💖</p>
                     </div>
                     <p className="text-right text-rose-600 font-semibold">
-                        Forever yours,<br />
-                        Your love❤️
+                        #OFF ,<br />
+                        Seer ⚡️
                     </p>
                 </div>
             </div>

@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 
 export default function QuestionCard({ emoji, question, onAnswer, showButtons = true, btnText }) {
+
+    const [noPosition, setNoPosition] = useState({ x: 0, y: 0 })
+
+    const moveNoButton = () => {
+        const randomX = Math.random() * 200 - 100
+        const randomY = Math.random() * 120 - 60
+
+        setNoPosition({
+            x: randomX,
+            y: randomY
+        })
+    }
 
     const emojiAnimationVariants = {
         animate: {
@@ -15,15 +27,17 @@ export default function QuestionCard({ emoji, question, onAnswer, showButtons = 
             }
         }
     };
+
     return (
         <AnimatePresence>
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: .400 }}
+                transition={{ duration: .4 }}
                 exit={{ opacity: 0, scale: 0 }}
                 className="bg-white p-6 py-8 rounded-2xl shadow-question-card min-w-48 w-full max-w-[350px] relative"
             >
+
                 <div className="absolute top-0 z-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <motion.div
                         className="text-[33px]"
@@ -33,11 +47,16 @@ export default function QuestionCard({ emoji, question, onAnswer, showButtons = 
                         {emoji}
                     </motion.div>
                 </div>
-                <h2 className="text-xl font-medium text-gradient mb-4 text-center relative z-10">{question}</h2>
-                <div className="flex justify-center space-x-4
-            ">
+
+                <h2 className="text-xl font-medium text-gradient mb-4 text-center relative z-10">
+                    {question}
+                </h2>
+
+                <div className="flex justify-center space-x-4 relative">
+
                     {showButtons ? (
                         <>
+
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
@@ -46,16 +65,19 @@ export default function QuestionCard({ emoji, question, onAnswer, showButtons = 
                             >
                                 Yesss
                             </motion.button>
+
                             <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.98 }}
-                                onClick={() => onAnswer(false)}
+                                onMouseEnter={moveNoButton}
+                                animate={{ x: noPosition.x, y: noPosition.y }}
+                                transition={{ type: "spring", stiffness: 300 }}
                                 className="bg-[#957DAD] font-medium text-white px-6 py-2 rounded-full hover:bg-[#9c88b1]"
                             >
                                 Nooo
                             </motion.button>
+
                         </>
                     ) : (
+
                         <motion.button
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
@@ -64,8 +86,11 @@ export default function QuestionCard({ emoji, question, onAnswer, showButtons = 
                         >
                             {btnText}
                         </motion.button>
+
                     )}
+
                 </div>
+
             </motion.div>
         </AnimatePresence>
     )
