@@ -174,9 +174,9 @@ export default function MainContent() {
         // Final Page
         <StoryPage key="final" backgroundColor="bg-gradient-to-br from-pink-100 to-blue-200">
             <div className="flex flex-col items-center justify-center h-full text-center">
-                <h2 className="text-4xl font-bold text-pink-600 mb-6 relative z-10">Our Story Continues...</h2>
+                <h2 className="text-4xl font-bold text-pink-600 mb-6 relative z-10">Moments Still Waiting ....</h2>
                 <p className="text-xl text-blue-700 mb-8 relative z-10">
-                    Every moment we share is another step in our unforgettable story.
+                The best part of every day is knowing you’re in it.
                 </p>
                 <motion.div
                     animate={{ scale: [1, 1.2, 1] }}
