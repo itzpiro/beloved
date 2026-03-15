@@ -52,7 +52,7 @@ export default function QuestionCard({ emoji, question, onAnswer, showButtons = 
                     {question}
                 </h2>
 
-                <div className="flex justify-center space-x-4 relative">
+                <div className="flex justify-center space-x-4 relative z-20">
 
                     {showButtons ? (
                         <>
