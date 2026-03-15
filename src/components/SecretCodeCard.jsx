@@ -42,7 +42,7 @@ export default function SecretCodeCard({ onCorrect }) {
                         🔒
                     </motion.div>
                 </div>
-                <h2 className="text-xl font-medium text-gradient mb-4 text-center relative z-10">A little secret between us! Enter the code to unlock more love.</h2>
+                <h2 className="text-xl font-medium text-gradient mb-4 text-center relative z-10">A little secret Suprise! Enter the code to unlock more.</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="relative">
                         <input

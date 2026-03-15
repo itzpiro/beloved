@@ -75,9 +75,9 @@ export default function Cards({ setMusicPlaying, handleShowMainContent }) {
                     <QuestionCard
                         key="yes-response"
                         emoji="🩷"
-                        question="Yesss! You always make me smile! I’m so lucky to have you in my life."
+                        question="Yesss! Whising you Happy B-Day! I’m so lucky to have you in my life."
                         showButtons={false}
-                        btnText="More love ahead"
+                        btnText="More ahead"
                         onAnswer={() => setCardState("secretCode")} // Add a new action here
                     />
                 )}
