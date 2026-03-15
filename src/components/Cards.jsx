@@ -59,8 +59,8 @@ export default function Cards({ setMusicPlaying, handleShowMainContent }) {
                 {cardState === "mainQuestion" && (
                     <QuestionCard
                         key="main-question"
-                        emoji="🥰"
-                        question="?"
+                        emoji="👀"
+                        question="Will you be mine ..Yesterday , Today & Everyday ?"
                         onAnswer={(answer) => {
                             if (answer) {
                                 setCardState("yesResponse")

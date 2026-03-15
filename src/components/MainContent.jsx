@@ -255,8 +255,7 @@ export default function MainContent() {
                     >
                         {/* When showing your own pics replace image src with this - /images/${selectedImage}.jpg */}
                         <Image
-                            src={`https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                            alt={`Gallery image ${selectedImage}`}
+                            src={`/images/${i}.jpg`}
                             width={300}
                             height={250}
                             className="rounded-2xl w-auto h-auto"
