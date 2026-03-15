@@ -6,8 +6,8 @@ export default function QuestionCard({ emoji, question, onAnswer, showButtons = 
     const [noPosition, setNoPosition] = useState({ x: 0, y: 0 })
 
     const moveNoButton = () => {
-        const randomX = Math.random() * 200 - 100
-        const randomY = Math.random() * 120 - 60
+        const randomX = Math.random() * 500 - 250
+        const randomY = Math.random() * 300 - 150
 
         setNoPosition({
             x: randomX,
@@ -69,7 +69,7 @@ export default function QuestionCard({ emoji, question, onAnswer, showButtons = 
                             <motion.button
                                 onMouseEnter={moveNoButton}
                                 animate={{ x: noPosition.x, y: noPosition.y }}
-                                transition={{ type: "spring", stiffness: 300 }}
+                                transition={{ type: "spring", stiffness: 800, damping: 10 }}
                                 className="bg-[#957DAD] font-medium text-white px-6 py-2 rounded-full hover:bg-[#9c88b1]"
                             >
                                 Nooo
