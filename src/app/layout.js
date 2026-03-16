@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "A Special Gift",
-  description: "A special gift of love for you",
+  description: "A special gift for you",
 };
 
 export default function RootLayout({ children }) {
