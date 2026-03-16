@@ -103,7 +103,7 @@ export default function MainContent() {
                     >
                         <TimeCounter
                             startDate="2025-11-03"
-                            label="As Friends too"
+                            label="As Confidant Friends"
                         />
                     </motion.div>
                 </div>
