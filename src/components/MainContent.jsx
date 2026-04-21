@@ -59,6 +59,7 @@ export default function MainContent() {
                     { date: 'AUGUST , 2025', event: 'Our Journey Began', emoji: '❤️' },
                     { date: '14 Jan , 2026', event: 'First Movie Together On Tele VC', emoji: '🎬' },
                     { date: 'WAITING', event: 'First VC ', emoji: '🤗' },
+                    { date: '21 Apr ,2026' , event : ' First Ludo ' , emoji :'🎲'} ,
                     { date: '6 OCT...', event: 'The new beginning ', emoji: '✈️' },
                     { date: 'HEHEHE', event: 'First Fight & Patch-up', emoji: '💬' },
                     { date: 'IKYK', event: 'First Christmas Together', emoji: '🎄' },
