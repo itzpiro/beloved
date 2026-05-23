@@ -170,15 +170,33 @@ export default function MainContent() {
                 </div>
             </div>
         </StoryPage>,
-        <StoryPage key="wait" backgroundColor="bg-gradient-to-br from-pink-100 to-blue-200">
-            <h2 className="text-3xl font-bold text-blue-600 mb-6 relative z-10">More to Come...(Story</h2>
-            <div className="flex-1 rounded-2xl overflow-y-auto overflow-x-hidden custom-scrollbar">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-2xl">
-                    <p> today is holiday😁 however we can go on a long drive together and we can spend time moreover we can do jogging then boxing or arm wrestling after these we may be at club and enjoying drinks and snacks or wine then play games after that we wanna go to camping and exploring areas and the beauty around the area of mountains and OFF roading then sitting on elephants also seeing the eyes of each elephant and eyes went to haven once upon we shouldn't came home but suddenly we decided to marriage but we wanna go police station to surrender ourself to the officer then officer says that two people who are always true..............
-</p>
+        <StoryPage key="wait"
+    backgroundColor="bg-gradient-to-br from-pink-100 via-rose-100 to-blue-200">
+    <div className="relative z-10 flex flex-col h-full px-4 py-6">
+
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-6 text-center">
+            More to Come...(Story)
+        </h2>
+
+        <div className="flex-1 overflow-y-auto overflow-x-hidden custom-scrollbar">
+
+            <div className="bg-white/40 backdrop-blur-md rounded-3xl p-6 shadow-lg border border-white/30">
+
+                <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-wrap">
+Today is holiday😁 however we can go on a long drive together and we can spend time <br />Moreover we can do jogging then boxing or arm wrestling <br />After these we may be at club and enjoying drinks and snacks or wine then play games <br />After that we wanna go to camping and exploring areas and the beauty around the area of mountains and OFF roading then sitting on elephants also seeing the eyes of each elephant <br />And eyes went to haven once Then we shouldn't came home but suddenly we decided to marriage <br /> But we wanna go police station to surrender ourself to the officer then officer says that two people who are always true..............
+                </p>
+
+                <div className="mt-8 text-right">
+                    <p className="text-rose-600 font-semibold">
+                        23rd may 26.. <br />
+                        nyt
+                    </p>
                 </div>
+
             </div>
-        </StoryPage>,
+        </div>
+    </div>
+</StoryPage>,
 
         // Final Page
         <StoryPage key="final" backgroundColor="bg-gradient-to-br from-pink-100 to-blue-200">
