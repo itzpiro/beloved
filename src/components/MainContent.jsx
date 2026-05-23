@@ -170,6 +170,15 @@ export default function MainContent() {
                 </div>
             </div>
         </StoryPage>,
+        <StoryPage key="wait" backgroundColor="bg-gradient-to-br from-pink-100 to-blue-200">
+            <h2 className="text-3xl font-bold text-blue-600 mb-6 relative z-10">More to Come...(Story</h2>
+            <div className="flex-1 rounded-2xl overflow-y-auto overflow-x-hidden custom-scrollbar">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-2xl">
+                    <p> today is holiday😁 however we can go on a long drive together and we can spend time moreover we can do jogging then boxing or arm wrestling after these we may be at club and enjoying drinks and snacks or wine then play games after that we wanna go to camping and exploring areas and the beauty around the area of mountains and OFF roading then sitting on elephants also seeing the eyes of each elephant and eyes went to haven once upon we shouldn't came home but suddenly we decided to marriage but we wanna go police station to surrender ourself to the officer then officer says that two people who are always true..............
+</p>
+                </div>
+            </div>
+        </StoryPage>,
 
         // Final Page
         <StoryPage key="final" backgroundColor="bg-gradient-to-br from-pink-100 to-blue-200">
