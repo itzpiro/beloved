@@ -183,7 +183,7 @@ export default function MainContent() {
             <div className="bg-white/40 backdrop-blur-md rounded-3xl p-6 shadow-lg border border-white/30">
 
                 <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-wrap">
-Today is holiday😁 however we can go on a long drive together and we can spend time <br />Moreover we can do jogging then boxing or arm wrestling <br />After these we may be at club and enjoying drinks and snacks or wine then play games <br />After that we wanna go to camping and exploring areas and the beauty around the area of mountains and OFF roading then sitting on elephants also seeing the eyes of each elephant <br />And eyes went to haven once Then we shouldn't came home but suddenly we decided to marriage <br /> But we wanna go police station to surrender ourself to the officer then officer says that two people who are always true..............
+Today is holiday😁 however we can go on a long drive together and we can spend time <br />Moreover we can do jogging then boxing or arm wrestling <br />After these we may be at club and enjoying drinks and snacks or wine then play games <br />After that we wanna go to camping and exploring areas and the beauty around the area of mountains and OFF roading then sitting on elephants also seeing the eyes of each elephant <br />And eyes went to haven once on u Then we shouldn't came home but suddenly we decided to marriage <br /> But we wanna go police station to surrender ourself to the officer then officer says that two people who are always true..............
                 </p>
 
                 <div className="mt-8 text-right">
