@@ -92,7 +92,7 @@ export default function MainContent() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <TimeCounter
-                            startDate="2025-09-02"
+                            startDate="2025-08-02"
                             label="As Friends"
                         />
                     </motion.div>
