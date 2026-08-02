@@ -12,7 +12,7 @@ export default function MainContent() {
     const [currentPage, setCurrentPage] = useState(0)
     const [selectedImage, setSelectedImage] = useState(null)
 
-    const nextPage = () => setCurrentPage((prev) => Math.min(prev + 1, 5))
+    const nextPage = () => setCurrentPage((prev) => Math.min(prev + 1, pages.length - 1))
     const prevPage = () => setCurrentPage((prev) => Math.max(prev - 1, 0))
 
     const pages = [
